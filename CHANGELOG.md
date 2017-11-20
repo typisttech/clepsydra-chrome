@@ -1,8 +1,16 @@
 # Change Log
 
+## [0.1.1](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.1) (2017-11-21)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.0...0.1.1)
+
+**Merged pull requests:**
+
+- Git: Add build/.gitkeep [\#3](https://github.com/TypistTech/clepsydra-chrome/pull/3) ([TangRufus](https://github.com/TangRufus))
+
 ## [0.1.0](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.0) (2017-11-20)
 **Merged pull requests:**
 
+- Version bump 0.1.0 [\#2](https://github.com/TypistTech/clepsydra-chrome/pull/2) ([TangRufus](https://github.com/TangRufus))
 - First release [\#1](https://github.com/TypistTech/clepsydra-chrome/pull/1) ([TangRufus](https://github.com/TangRufus))
 
 
