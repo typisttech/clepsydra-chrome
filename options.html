@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Clepsydra: Faucet Reminder</title>
+
+  <link href="./bootstrap.css" rel="stylesheet">
+  <link href="./options.css" rel="stylesheet">
+  <script src="./dist/options.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <div class="text-center">
+          <h1><img src="./icons/icon48.png"> Clepsydra: Faucet Reminder</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <div class="alert alert-info" role="alert">
+          Clepsydra recommandeds faucets that use microwallets to prevent unreachable withdrawal threshold scrams. Make sure you have these microwallet accounts:
+          <ul>
+            <li><a href="https://faucethub.io/r/27245107">FaucetHub</a></li>
+            <li><a href="https://coinpot.co">CoinPot</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card bg-light">
+          <div class="card-header">
+            Timer Settings
+          </div>
+          <div class="card-body">
+            <div class="alert alert-success text-center" id="form-saved-alert">
+              Saved!
+            </div>
+
+            <form id="timer-settings-form" class="form-inline">
+              Open <input id="num-facuets-to-open" type="number" min="1" class="form-control" required> faucets every <input id="open-interval-in-minutes" type="number" min="1" class="form-control" required> minutes.
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <div class="card bg-light">
+          <h2 class="card-header h3">Faucet List <small class="text-muted">( <span id="num-of-faucets">x</span> in total )</small></h2>
+          <div class="card-body">
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Faucet</th>
+                  <th scope="col">Coin</th>
+                  <th scope="col" class="text-center">Microwallet</th>
+                  <th scope="col" class="text-center">Interval</th>
+                  <th scope="col" class="text-center">Daily Bouns</th>
+                  <th scope="col" class="text-center">Status</th>
+                </tr>
+              </thead>
+              <tbody id="faucet-list-tbody">
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card bg-light">
+          <h2 class="card-header h3">FAQs</h2>
+          <div class="card-body">
+
+            <h3 class="card-title">How to open a faucet?</h3>
+            <p class="card-text">
+              You don't! Clepsydra auto-open faucets periodically according to your timer settings.</p>
+            <p class="card-text">
+              Note that Clepsydra only open the faucets which available for claims. For example: Clepsydra only open <a href="http://moonliteco.in/?ref=d8f0460a3c2d">Moon Litecon</a> once within 5 minutes because you can't get a second claim from it.
+            </p>
+            <p class="card-text">
+              If you must open the faucets manually, wait for the next version (0.2.x). You will able to open a faucet by clicking the Clepsydra icon <img src="../icons/icon16.png"> on the top right corner.
+            </p>
+
+            <h3 class="card-title">How to add a new faucet?</h3>
+            <p class="card-text">
+              Faucets are hand-picked by the extension author. You can suggest one via <a href="mailto:clepsydra@typist.tech">clepsydra@typist.tech</a><br />
+              <h4>Basic requirements</h4>
+              <ul>
+                <li>No more than 2 captcha for one claim (one for login; one for claim)</li>
+                <li>No terminator level captcha</li>
+                <li>No annoying pop-up / pop-under / redirects</li>
+                <li>Reasonable withdrawal threshold</li>
+              </ul>
+
+              <h4>Extra points</h4>
+              <ul>
+                <li>Use a microwallet</li>
+                <li>Have a daily bonus program (for example: the Moon franchises)</li>
+                <li>Direct payout to microwallet (for example: <a href="http://www.starbits.io/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd">StarBits</a> and <a href="http://www.fautsy.com/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd">Fautsy</a>)</li>
+                <li>Use HTTPS everywhere</li>
+                <li>Have a way to earn with minimum actions (for example: <a href="https://www.kickasstraffic.com/affiliate/1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd">KickassTraffic<a/> and <a href="https://bitvideo.club/index?ref=tangrufus">BitVideo</a>)</li>
+              </ul>
+
+              Life is too short. No matter it accepted or not, you won't get a reply. Thanks in advance.
+            </p>
+
+            <h3 class="card-title">What is microwallet?</h3>
+            <p class="card-text">
+              Since each faucet payment takes time and miner fee, it's impractical for faucet owners to pay you for each claim. Therefore, faucet owners send your coins to a <em>microwallet</em>. This usually completes within minutes and free of charge
+              until you withdraw. Popular microwallets:
+              <ul>
+                <li><a href="https://faucethub.io/r/27245107">FaucetHub</a></li>
+                <li><a href="https://coinpot.co">CoinPot</a></li>
+              </ul>
+            </p>
+
+            <h3 class="card-title">How to donate?</h3>
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <img class="p-3" src="./icons/xmr-donation-qr.png">
+                <img class="p-3" src="./icons/btc-donation-qr.png">
+                <img class="p-3" src="./icons/doge-donation-qr.png">
+              </div>
+            </div>
+
+            <hr />
+            <table class="table table-responsive">
+              <tbody>
+                <tr>
+                  <th scope="row">Monero (XMR)</th>
+                  <td><code>4GGyVEhmYAWJdXwVJ55DMc74SmbERwNMx4xPopUhjf5KhFkK1xEERbE5efdnVLM7QFHLX5N1boEvWGJDxndME8FNYWeDABVtm9xDSWbsDQ</code></td>
+                </tr>
+                <tr>
+                  <th scope="row">Bitcoin (BTC)</th>
+                  <td><code>1LSiHnwo6GEgfGoN8QkJRLJr3Qm9rmNUVN</code></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dogecoin (DOGE)</th>
+                  <td><code>DDhDutT6R2PhurvXwxWD2j52EE5NaRYghC<code></td>
+                </tr>
+                <tr>
+                  <th scope="row">ShapeShift</th>
+                  <td><a href="https://shapeshift.io/shifty.html?destination=4GGyVEhmYAWJdXwVJ55DMc74SmbERwNMx4xPopUhjf5KhFkK1xEERbE5efdnVLM7QFHLX5N1boEvWGJDxndME8FNYWeDABVtm9xDSWbsDQ&amp;output=XMR&amp;apiKey="><img src="./icons/shapeshift_io_small_light_altcoins.png"></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">PayPal</th>
+                  <td><a href="https://cnhv.co/asrh">https://cnhv.co/asrh</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <h3 class="card-title">Are you for hire?</h3>
+            <p class="card-text">
+              Yes, contact me via the contact form <a href="https://cnhv.co/axdv">here</a> or via email <a href="mailto:info@typist.tech">info@typist.tech</a>
+            </p>
+
+            <h3 class="card-title">Is this an official extension from those faucets or micopayment systems?</h3>
+            <p class="card-text">
+              No, this extension is made by <a href="https://cnhv.co/hy1">Tang Rufus</a>.
+            </p>
+
+            <h3 class="card-title">Where is the source code?</h3>
+            <p class="card-text">
+              <ul>
+                <li>GitHub: <a href="https://cnhv.co/evui">TypistTech/clepsydra-chrome</a></li>
+              </ul>
+              <small class="text-muted">Tips: Cross check with the <a href="https://cnhv.co/axge">version downloaded on your device</a>.</small>
+            </p>
+
+            <h3 class="card-title">Where should I report bugs and ask questions?</h3>
+            <p class="card-text">
+              <ul>
+                <li>Send email to <a href="mailto:clepsydra-chrome@typist.tech">clepsydra-chrome@typist.tech</a></li>
+                <li>Use <a href="https://cnhv.co/evum">GitHub issue</a> if you are a developer</li>
+              </ul>
+              <small class="text-muted">Support requests about faucets and micopayment systems should be reported to their support teams instead.</small>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card bg-light">
+          <h2 class="card-header h3">The MIT License</h2>
+          <div class="card-body">
+            <p class="card-text"> Copyright (c) 2017 The contributors </p>
+
+            <p class="card-text"> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated mentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,
+              modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: </p>
+
+            <p class="card-text"> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. </p>
+
+            <p class="card-text"> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+              HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
