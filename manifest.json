@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Clepsydra: Faucet Reminder",
+  "short_name": "ClepsydraChrome",
+  "version": "0.1.0",
+  "description": "Open faucet pages automatically. Never loss your daily reward again!",
+  "homepage_url": "https://cnhv.co/hy1",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "minimum_chrome_version": "51",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "dist/background.js"
+    ]
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Clepsydra: Faucet Reminder"
+  },
+  "web_accessible_resources": [
+    "icons/icon48.png"
+  ]
+}

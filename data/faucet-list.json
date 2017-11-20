@@ -1,0 +1,139 @@
+{
+  "faucets": [
+    {
+      "id": "moonbit",
+      "name": "Moon Bitcoin",
+      "coin": "BTC",
+      "microwallet": "coinpot",
+      "url": "http://moonbit.co.in/?ref=40832082113b",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "moondoge",
+      "name": "Moon Dogecoin",
+      "coin": "DOGE",
+      "microwallet": "coinpot",
+      "url": "http://moondoge.co.in/?ref=3faf602b5c06",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "moondash",
+      "name": "Moon Dash",
+      "coin": "DASH",
+      "microwallet": "coinpot",
+      "url": "http://moondash.co.in/?ref=6248C3B48E42",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "moonliteco",
+      "name": "Moon Litecoin",
+      "coin": "LTC",
+      "microwallet": "coinpot",
+      "url": "http://moonliteco.in/?ref=d8f0460a3c2d",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "bonusbitcoin",
+      "name": "Bonus Bitcoin",
+      "coin": "BTC",
+      "microwallet": "coinpot",
+      "url": "http://bonusbitcoin.co/?ref=F1850642BA28",
+      "intervalInMinutes": 15,
+      "dailyBouns": true
+    },
+    {
+      "id": "freebitco",
+      "name": "FreeBitco.in",
+      "coin": "BTC",
+      "url": "https://freebitco.in/?r=9731249",
+      "intervalInMinutes": 60
+    },
+    {
+      "id": "freedoge",
+      "name": "freedoge.co.in",
+      "coin": "DOGE",
+      "url": "http://freedoge.co.in/?r=1424101",
+      "intervalInMinutes": 60
+    },
+    {
+      "id": "eobot",
+      "name": "Eobot",
+      "url": "https://www.eobot.com/new.aspx?referid=1343133",
+      "intervalInMinutes": 1440
+    },
+    {
+      "id": "starbits",
+      "name": "StarBits",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://www.starbits.io/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "fautsy",
+      "name": "Fautsy",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://www.fautsy.com/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "kickasstraffic",
+      "name": "KickassTraffic",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "https://www.kickasstraffic.com/affiliate/1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd"
+    },
+    {
+      "id": "claimbits",
+      "name": "ClaimBits",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://www.claimbits.io/?ref=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "bitgolden",
+      "name": "bitGolden",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "https://bitgolden.io/ref/1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "bitsilver",
+      "name": "bitSilver",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "https://bitsilver.io/ref/1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "bitlucky",
+      "name": "bitLucky",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "https://bitlucky.io/ref/1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "gobits",
+      "name": "GoBits",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://www.gobits.io/?ref=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "bitvideo",
+      "name": "BitVideo",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "https://bitvideo.club/index?ref=tangrufus"
+    }
+  ]
+}

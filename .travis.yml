@@ -1,0 +1,31 @@
+language: node_js
+
+dist: trusty
+
+sudo: false
+
+node_js:
+  - 8
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+notifications:
+  email: false
+
+script:
+  - yarn run lint
+
+before_deploy:
+  - yarn run build
+  - mv build/clepsydra-chrome.zip build/clepsydra-chrome-$TRAVIS_TAG.zip
+
+deploy:
+  - provider: releases
+    api_key: $GITHUB_ACCESS_TOKEN
+    file: build/clepsydra-chrome-$TRAVIS_TAG.zip
+    skip_cleanup: true
+    on:
+      tags: true
