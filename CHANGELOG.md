@@ -1,10 +1,19 @@
 # Change Log
 
-## [0.1.1](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.1) (2017-11-21)
+## [0.1.2](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.2) (2017-11-23)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.1...0.1.2)
+
+**Merged pull requests:**
+
+- Option Page: Add share buttons, review alert and Litecoin donation [\#6](https://github.com/TypistTech/clepsydra-chrome/pull/6) ([TangRufus](https://github.com/TangRufus))
+- Update referral links and add Mellow Ads [\#5](https://github.com/TypistTech/clepsydra-chrome/pull/5) ([TangRufus](https://github.com/TangRufus))
+
+## [0.1.1](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.1) (2017-11-20)
 [Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.0...0.1.1)
 
 **Merged pull requests:**
 
+- Version bump 0.1.1 [\#4](https://github.com/TypistTech/clepsydra-chrome/pull/4) ([TangRufus](https://github.com/TangRufus))
 - Git: Add build/.gitkeep [\#3](https://github.com/TypistTech/clepsydra-chrome/pull/3) ([TangRufus](https://github.com/TangRufus))
 
 ## [0.1.0](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.0) (2017-11-20)
