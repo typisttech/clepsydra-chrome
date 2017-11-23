@@ -5,7 +5,7 @@
       "name": "Moon Bitcoin",
       "coin": "BTC",
       "microwallet": "coinpot",
-      "url": "http://moonbit.co.in/?ref=40832082113b",
+      "url": "http://moonbit.co.in/?ref=1a961137859a",
       "intervalInMinutes": 5,
       "dailyBouns": true
     },
@@ -14,7 +14,7 @@
       "name": "Moon Dogecoin",
       "coin": "DOGE",
       "microwallet": "coinpot",
-      "url": "http://moondoge.co.in/?ref=3faf602b5c06",
+      "url": "http://moondoge.co.in/?ref=5ec95c88cc64",
       "intervalInMinutes": 5,
       "dailyBouns": true
     },
@@ -23,7 +23,7 @@
       "name": "Moon Dash",
       "coin": "DASH",
       "microwallet": "coinpot",
-      "url": "http://moondash.co.in/?ref=6248C3B48E42",
+      "url": "http://moondash.co.in/?ref=B8960100066C",
       "intervalInMinutes": 5,
       "dailyBouns": true
     },
@@ -32,7 +32,7 @@
       "name": "Moon Litecoin",
       "coin": "LTC",
       "microwallet": "coinpot",
-      "url": "http://moonliteco.in/?ref=d8f0460a3c2d",
+      "url": "http://moonliteco.in/?ref=0b140a4d6060",
       "intervalInMinutes": 5,
       "dailyBouns": true
     },
@@ -41,7 +41,7 @@
       "name": "Bonus Bitcoin",
       "coin": "BTC",
       "microwallet": "coinpot",
-      "url": "http://bonusbitcoin.co/?ref=F1850642BA28",
+      "url": "http://bonusbitcoin.co/?ref=630377FC9BE5",
       "intervalInMinutes": 15,
       "dailyBouns": true
     },
@@ -134,6 +134,13 @@
       "coin": "BTC",
       "microwallet": "faucethub",
       "url": "https://bitvideo.club/index?ref=tangrufus"
+    },
+    {
+      "id": "mellowads",
+      "name": "Mellow Ads",
+      "coin": "BTC",
+      "url": "http://mellowads.com/faucet/?ref=10CB5FC227E8",
+      "intervalInMinutes": 1440
     }
   ]
 }
