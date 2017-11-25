@@ -7,7 +7,8 @@
       "microwallet": "coinpot",
       "url": "http://moonbit.co.in/?ref=1a961137859a",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 10
     },
     {
       "id": "moondoge",
@@ -16,7 +17,8 @@
       "microwallet": "coinpot",
       "url": "http://moondoge.co.in/?ref=5ec95c88cc64",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 10
     },
     {
       "id": "moondash",
@@ -25,7 +27,8 @@
       "microwallet": "coinpot",
       "url": "http://moondash.co.in/?ref=B8960100066C",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 10
     },
     {
       "id": "moonliteco",
@@ -34,7 +37,8 @@
       "microwallet": "coinpot",
       "url": "http://moonliteco.in/?ref=0b140a4d6060",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 10
     },
     {
       "id": "bonusbitcoin",
@@ -43,7 +47,8 @@
       "microwallet": "coinpot",
       "url": "http://bonusbitcoin.co/?ref=630377FC9BE5",
       "intervalInMinutes": 15,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 40
     },
     {
       "id": "freebitco",
@@ -63,7 +68,8 @@
       "id": "eobot",
       "name": "Eobot",
       "url": "https://www.eobot.com/new.aspx?referid=1343133",
-      "intervalInMinutes": 1440
+      "intervalInMinutes": 1440,
+      "rating": 150
     },
     {
       "id": "starbits",
@@ -71,7 +77,8 @@
       "coin": "BTC",
       "microwallet": "faucethub",
       "url": "http://www.starbits.io/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
-      "intervalInMinutes": 5
+      "intervalInMinutes": 5,
+      "rating": 50
     },
     {
       "id": "fautsy",
@@ -140,7 +147,8 @@
       "name": "Mellow Ads",
       "coin": "BTC",
       "url": "http://mellowads.com/faucet/?ref=10CB5FC227E8",
-      "intervalInMinutes": 1440
+      "intervalInMinutes": 1440,
+      "rating": 200
     },
     {
       "id": "instantbtc",
@@ -150,7 +158,8 @@
       "microwalletOptional": true,
       "url": "https://www.instant-btc.eu/en/ref-hPFfZSa3S",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 20
     },
     {
       "id": "instantltc",
@@ -158,7 +167,8 @@
       "coin": "LTC",
       "url": "https://www.instant-ltc.eu/en/ref-byNyT2If3UTk",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 20
     },
     {
       "id": "instantdoge",
@@ -166,7 +176,8 @@
       "coin": "DOGE",
       "url": "https://www.instant-doge.eu/en/ref-0xG1vqESn08",
       "intervalInMinutes": 5,
-      "dailyBouns": true
+      "dailyBouns": true,
+      "rating": 20
     },
     {
       "id": "mybitconet",
@@ -196,7 +207,8 @@
       "name": "MYDOGE",
       "coin": "DOGE",
       "url": " http://mydoge.co.in?ref=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N ",
-      "intervalInMinutes": 1
+      "intervalInMinutes": 1,
+      "rating": 20
     }
   ]
 }

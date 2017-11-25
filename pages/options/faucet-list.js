@@ -111,7 +111,7 @@ import Storage from '../../src/Storage.js';
         blacklist,
       } = await Settings.fromStoreage(storage);
 
-      const faucets = await Faucets.all();
+      const faucets = await Faucets.sortByRating();
 
       // Reset tbody
       document.getElementById('faucet-list-tbody').innerHTML = '';

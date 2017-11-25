@@ -1,4 +1,9 @@
 /* global fetch:true */
+
+import flattenDeep from 'lodash/flattenDeep';
+import partition from 'lodash/partition';
+import sortBy from 'lodash/sortBy';
+
 export default class Faucets {
   static async rawList() {
     const response = await fetch('../data/faucet-list.json');
@@ -16,6 +21,7 @@ export default class Faucets {
       microwallet: '',
       intervalInMinutes: 0,
       dailyBouns: false,
+      rating: 100,
     });
 
     return rawList.faucets.map((rawFaucet) => {
@@ -28,6 +34,15 @@ export default class Faucets {
     const all = await this.all();
 
     return all.length;
+  }
+
+  static async sortByRating() {
+    const all = await this.all();
+
+    const groupByDailyBouns = partition(all, 'dailyBouns');
+    const sortedGroups = groupByDailyBouns.map(group => sortBy(group, ['rating', 'coin', 'intervalInMinutes', 'microwallet']));
+
+    return flattenDeep(sortedGroups);
   }
 
   static async enabled(blacklist) {
