@@ -141,6 +141,62 @@
       "coin": "BTC",
       "url": "http://mellowads.com/faucet/?ref=10CB5FC227E8",
       "intervalInMinutes": 1440
+    },
+    {
+      "id": "instantbtc",
+      "name": "Instant BTC",
+      "coin": "BTC",
+      "microwallet": "xapo",
+      "microwalletOptional": true,
+      "url": "https://www.instant-btc.eu/en/ref-hPFfZSa3S",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "instantltc",
+      "name": "Instant LTC",
+      "coin": "LTC",
+      "url": "https://www.instant-ltc.eu/en/ref-byNyT2If3UTk",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "instantdoge",
+      "name": "Instant DOGE",
+      "coin": "DOGE",
+      "url": "https://www.instant-doge.eu/en/ref-0xG1vqESn08",
+      "intervalInMinutes": 5,
+      "dailyBouns": true
+    },
+    {
+      "id": "mybitconet",
+      "name": "MyBitco.net",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://mybitco.net/?ref=3872",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "smartbitcoclub",
+      "name": "Smartbitco.Club",
+      "coin": "BTC",
+      "microwallet": "faucethub",
+      "url": "http://smartbitco.club/?ref=14322",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "claimfreecoins",
+      "name": "Claim Free Dogecoin",
+      "coin": "DOGE",
+      "url": "https://claimfreecoins.com/?r=MYer3NEaOB",
+      "intervalInMinutes": 15
+    },
+    {
+      "id": "mydoge",
+      "name": "MYDOGE",
+      "coin": "DOGE",
+      "url": " http://mydoge.co.in?ref=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N ",
+      "intervalInMinutes": 1
     }
   ]
 }
