@@ -52,7 +52,7 @@ export default class Faucets {
     });
   }
 
-  static async sorted(blacklist, lastOpenHistory) {
+  static async claimReadySorted(blacklist, lastOpenHistory) {
     const claimReady = await this.claimReady(blacklist, lastOpenHistory);
     return claimReady.sort(({
       id: idA,
@@ -83,8 +83,8 @@ export default class Faucets {
   }
 
   static async pick(blacklist, lastOpenHistory, numFacuetsToOpen) {
-    const sorted = await this.sorted(blacklist, lastOpenHistory);
+    const claimReadySorted = await this.claimReadySorted(blacklist, lastOpenHistory);
 
-    return sorted.slice(0, Number(numFacuetsToOpen));
+    return claimReadySorted.slice(0, Number(numFacuetsToOpen));
   }
 }
