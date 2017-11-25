@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Clepsydra: Faucet Reminder",
   "short_name": "ClepsydraChrome",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Open faucet pages automatically. Never loss your daily reward again!",
   "homepage_url": "https://cnhv.co/hy1",
   "icons": {
