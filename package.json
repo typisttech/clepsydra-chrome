@@ -14,6 +14,7 @@
     "build": "yarn run dev && git add -f dist && uploadStash=`git stash create` && git archive -o build/clepsydra-chrome.zip ${uploadStash} && git rm -r --cached dist"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4"
   }
 }
