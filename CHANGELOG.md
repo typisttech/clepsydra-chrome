@@ -1,10 +1,19 @@
 # Change Log
 
+## [0.1.3](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.3) (2017-11-25)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.2...0.1.3)
+
+**Merged pull requests:**
+
+- Options Page: Sort faucet list [\#9](https://github.com/TypistTech/clepsydra-chrome/pull/9) ([TangRufus](https://github.com/TangRufus))
+- Add faucets [\#8](https://github.com/TypistTech/clepsydra-chrome/pull/8) ([TangRufus](https://github.com/TangRufus))
+
 ## [0.1.2](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.2) (2017-11-23)
 [Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.1...0.1.2)
 
 **Merged pull requests:**
 
+- Version bump 0.1.2 [\#7](https://github.com/TypistTech/clepsydra-chrome/pull/7) ([TangRufus](https://github.com/TangRufus))
 - Option Page: Add share buttons, review alert and Litecoin donation [\#6](https://github.com/TypistTech/clepsydra-chrome/pull/6) ([TangRufus](https://github.com/TangRufus))
 - Update referral links and add Mellow Ads [\#5](https://github.com/TypistTech/clepsydra-chrome/pull/5) ([TangRufus](https://github.com/TangRufus))
 
