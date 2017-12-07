@@ -183,7 +183,7 @@
       "id": "mydoge",
       "name": "MYDOGE",
       "coin": "DOGE",
-      "url": " http://mydoge.co.in?ref=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N ",
+      "url": "http://mydoge.co.in?ref=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
       "intervalInMinutes": 1,
       "rating": 20
     }
