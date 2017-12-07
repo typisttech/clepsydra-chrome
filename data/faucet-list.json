@@ -186,6 +186,24 @@
       "url": "http://mydoge.co.in?ref=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
       "intervalInMinutes": 1,
       "rating": 20
+    },
+    {
+      "id": "cryptoaddicted",
+      "name": "CryptoAddicted",
+      "coin": "BTC",
+      "url": "http://cryptoaddicted.biz/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 30,
+      "dailyBouns": true,
+      "rating": 90
+    },
+    {
+      "id": "wethinkthebest",
+      "name": "WeThinkTheBest",
+      "coin": "LTC",
+      "url": "http://www.wethinkthebest.com/?r=LWn31K4xU1c4yVN5WRdYVjCtCJCD1CRpAK",
+      "intervalInMinutes": 30,
+      "dailyBouns": true,
+      "rating": 90
     }
   ]
 }
