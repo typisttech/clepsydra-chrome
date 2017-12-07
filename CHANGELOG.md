@@ -1,10 +1,18 @@
 # Change Log
 
+## [0.1.4](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.4) (2017-12-07)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.3...0.1.4)
+
+**Merged pull requests:**
+
+- Update faucet list [\#11](https://github.com/TypistTech/clepsydra-chrome/pull/11) ([TangRufus](https://github.com/TangRufus))
+
 ## [0.1.3](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.3) (2017-11-25)
 [Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.2...0.1.3)
 
 **Merged pull requests:**
 
+- Version bump 0.1.3 [\#10](https://github.com/TypistTech/clepsydra-chrome/pull/10) ([TangRufus](https://github.com/TangRufus))
 - Options Page: Sort faucet list [\#9](https://github.com/TypistTech/clepsydra-chrome/pull/9) ([TangRufus](https://github.com/TangRufus))
 - Add faucets [\#8](https://github.com/TypistTech/clepsydra-chrome/pull/8) ([TangRufus](https://github.com/TangRufus))
 
