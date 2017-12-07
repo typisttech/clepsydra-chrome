@@ -180,29 +180,6 @@
       "rating": 20
     },
     {
-      "id": "mybitconet",
-      "name": "MyBitco.net",
-      "coin": "BTC",
-      "microwallet": "faucethub",
-      "url": "http://mybitco.net/?ref=3872",
-      "intervalInMinutes": 5
-    },
-    {
-      "id": "smartbitcoclub",
-      "name": "Smartbitco.Club",
-      "coin": "BTC",
-      "microwallet": "faucethub",
-      "url": "http://smartbitco.club/?ref=14322",
-      "intervalInMinutes": 5
-    },
-    {
-      "id": "claimfreecoins",
-      "name": "Claim Free Dogecoin",
-      "coin": "DOGE",
-      "url": "https://claimfreecoins.com/?r=MYer3NEaOB",
-      "intervalInMinutes": 15
-    },
-    {
       "id": "mydoge",
       "name": "MYDOGE",
       "coin": "DOGE",
