@@ -1,6 +1,5 @@
 {
-  "faucets": [
-    {
+  "faucets": [{
       "id": "moonbit",
       "name": "Moon Bitcoin",
       "coin": "BTC",
@@ -48,7 +47,7 @@
       "url": "http://bonusbitcoin.co/?ref=630377FC9BE5",
       "intervalInMinutes": 15,
       "dailyBouns": true,
-      "rating": 40
+      "rating": 50
     },
     {
       "id": "freebitco",
@@ -152,32 +151,41 @@
     },
     {
       "id": "instantbtc",
-      "name": "Instant BTC",
+      "name": "Instant-BTC",
       "coin": "BTC",
       "microwallet": "xapo",
       "microwalletOptional": true,
       "url": "https://www.instant-btc.eu/en/ref-hPFfZSa3S",
       "intervalInMinutes": 5,
       "dailyBouns": true,
-      "rating": 20
+      "rating": 80
     },
     {
       "id": "instantltc",
-      "name": "Instant LTC",
+      "name": "Instant-LTC",
       "coin": "LTC",
       "url": "https://www.instant-ltc.eu/en/ref-byNyT2If3UTk",
       "intervalInMinutes": 5,
       "dailyBouns": true,
-      "rating": 20
+      "rating": 80
     },
     {
       "id": "instantdoge",
-      "name": "Instant DOGE",
+      "name": "Instant-DOGE",
       "coin": "DOGE",
       "url": "https://www.instant-doge.eu/en/ref-0xG1vqESn08",
       "intervalInMinutes": 5,
       "dailyBouns": true,
-      "rating": 20
+      "rating": 80
+    },
+    {
+      "id": "instanteth",
+      "name": "Instant-ETH",
+      "coin": "ETH",
+      "url": "ttps://www.instant-eth.eu/en/ref-4ffPZJN5Ty",
+      "intervalInMinutes": 5,
+      "dailyBouns": true,
+      "rating": 80
     },
     {
       "id": "mydoge",
@@ -193,8 +201,7 @@
       "coin": "BTC",
       "url": "http://cryptoaddicted.biz/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
       "intervalInMinutes": 30,
-      "dailyBouns": true,
-      "rating": 90
+      "dailyBouns": true
     },
     {
       "id": "wethinkthebest",
@@ -202,8 +209,68 @@
       "coin": "LTC",
       "url": "http://www.wethinkthebest.com/?r=LWn31K4xU1c4yVN5WRdYVjCtCJCD1CRpAK",
       "intervalInMinutes": 30,
+      "dailyBouns": true
+    },
+    {
+      "id": "etherwowfaucet",
+      "name": "WoW! Ethereum 2.0",
+      "coin": "ETH",
+      "microwallet": "faucethub",
+      "url": "http://ether.wowfaucet.com?r=0x9A97bdC67fCaaA78Fb19cCB215dD02639899A3E2",
+      "intervalInMinutes": 5,
       "dailyBouns": true,
-      "rating": 90
+      "rating": 40
+    },
+    {
+      "id": "speedyethfcnetwork",
+      "name": "SpeedyETH - FC Network",
+      "coin": "ETH",
+      "microwallet": "faucethub",
+      "url": "https://www.forumcoin.win/speedy-eth/?r=0x9A97bdC67fCaaA78Fb19cCB215dD02639899A3E2",
+      "intervalInMinutes": 1,
+      "rating": 50
+    },
+    {
+      "id": "ltcfaucetfcnetwork",
+      "name": "LTC Faucet - FC Network",
+      "coin": "LTC",
+      "microwallet": "faucethub",
+      "url": "https://www.forumcoin.win/ltc/?r=LWn31K4xU1c4yVN5WRdYVjCtCJCD1CRpAK",
+      "intervalInMinutes": 5,
+      "rating": 50
+    },
+    {
+      "id": "dogefaucetfcnetwork",
+      "name": "Doge Faucet - FC Network",
+      "coin": "DOGE",
+      "microwallet": "faucethub",
+      "url": "https://www.forumcoin.win/doge/?r=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
+      "intervalInMinutes": 1,
+      "rating": 50
+    },
+    {
+      "id": "freeether",
+      "name": "FreeETHER",
+      "coin": "ETH",
+      "url": "https://www.forumcoin.win/ether?ref=31424",
+      "intervalInMinutes": 5,
+      "rating": 99
+    },
+    {
+      "id": "freeeth",
+      "name": "FreeETH",
+      "coin": "ETH",
+      "url": "https://www.forumcoin.win/eth?ref=46313",
+      "intervalInMinutes": 5,
+      "rating": 99
+    },
+    {
+      "id": "freeethereum",
+      "name": "FreeETHEREUM",
+      "coin": "ETH",
+      "url": "https://www.forumcoin.win/ethereum?ref=41887",
+      "intervalInMinutes": 5,
+      "rating": 99
     }
   ]
 }

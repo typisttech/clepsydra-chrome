@@ -9,6 +9,7 @@ import Storage from '../../src/Storage.js';
       BTC: 'Bitcoin',
       DASH: 'Dash',
       DOGE: 'Dogecoin',
+      ETH: 'Ethereum',
       LTC: 'Litecoin',
       '': '',
     };
