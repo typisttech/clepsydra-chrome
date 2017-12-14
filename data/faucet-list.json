@@ -277,6 +277,15 @@
       "url": "https://doges4all.co/?r=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
       "intervalInMinutes": 15,
       "rating": 99
+    },
+    {
+      "id": "bitcoinker",
+      "name": "Bitcoinker",
+      "coin": "BTC",
+      "url": "https://bitcoinker.com/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
+      "intervalInMinutes": 5,
+      "dailyBouns": true,
+      "rating": 99
     }
   ]
 }
