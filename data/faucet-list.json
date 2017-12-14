@@ -268,6 +268,15 @@
       "coin": "ETH",
       "url": "https://www.forumcoin.win/ethereum?ref=41887",
       "intervalInMinutes": 5
+    },
+    {
+      "id": "doge4all",
+      "name": "Doges4All",
+      "coin": "DOGE",
+      "microwallet": "faucethub",
+      "url": "https://doges4all.co/?r=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
+      "intervalInMinutes": 15,
+      "rating": 99
     }
   ]
 }
