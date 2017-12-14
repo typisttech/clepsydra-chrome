@@ -1,10 +1,24 @@
 # Change Log
 
-## [0.1.5](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.5) (2017-12-09)
+## [0.1.6](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.6) (2017-12-15)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.5...0.1.6)
+
+**Closed issues:**
+
+- Add doges4all [\#16](https://github.com/TypistTech/clepsydra-chrome/issues/16)
+- Add Bitcoinker [\#15](https://github.com/TypistTech/clepsydra-chrome/issues/15)
+
+**Merged pull requests:**
+
+- Use `webpack` directly instead of `laravel-mix` [\#19](https://github.com/TypistTech/clepsydra-chrome/pull/19) ([TangRufus](https://github.com/TangRufus))
+- Update faucet list [\#18](https://github.com/TypistTech/clepsydra-chrome/pull/18) ([TangRufus](https://github.com/TangRufus))
+
+## [0.1.5](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.5) (2017-12-08)
 [Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.4...0.1.5)
 
 **Merged pull requests:**
 
+- Version bump 0.1.5 [\#14](https://github.com/TypistTech/clepsydra-chrome/pull/14) ([TangRufus](https://github.com/TangRufus))
 - Add faucets, mainly ethereum [\#13](https://github.com/TypistTech/clepsydra-chrome/pull/13) ([TangRufus](https://github.com/TangRufus))
 
 ## [0.1.4](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.4) (2017-12-07)
