@@ -253,24 +253,21 @@
       "name": "FreeETHER",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/ether?ref=31424",
-      "intervalInMinutes": 5,
-      "rating": 99
+      "intervalInMinutes": 5
     },
     {
       "id": "freeeth",
       "name": "FreeETH",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/eth?ref=46313",
-      "intervalInMinutes": 5,
-      "rating": 99
+      "intervalInMinutes": 5
     },
     {
       "id": "freeethereum",
       "name": "FreeETHEREUM",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/ethereum?ref=41887",
-      "intervalInMinutes": 5,
-      "rating": 99
+      "intervalInMinutes": 5
     }
   ]
 }
