@@ -253,23 +253,38 @@
       "name": "FreeETHER",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/ether?ref=31424",
-      "intervalInMinutes": 5,
-      "rating": 99
+      "intervalInMinutes": 5
     },
     {
       "id": "freeeth",
       "name": "FreeETH",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/eth?ref=46313",
-      "intervalInMinutes": 5,
-      "rating": 99
+      "intervalInMinutes": 5
     },
     {
       "id": "freeethereum",
       "name": "FreeETHEREUM",
       "coin": "ETH",
       "url": "https://www.forumcoin.win/ethereum?ref=41887",
+      "intervalInMinutes": 5
+    },
+    {
+      "id": "doge4all",
+      "name": "Doges4All",
+      "coin": "DOGE",
+      "microwallet": "faucethub",
+      "url": "https://doges4all.co/?r=D83rWCj7FcRhN5VdnWZWaQ1aS2sKHbNi1N",
+      "intervalInMinutes": 15,
+      "rating": 99
+    },
+    {
+      "id": "bitcoinker",
+      "name": "Bitcoinker",
+      "coin": "BTC",
+      "url": "https://bitcoinker.com/?r=1A7XNteKqz73Y2UvHDxrDEHSSv8c1ELJAd",
       "intervalInMinutes": 5,
+      "dailyBouns": true,
       "rating": 99
     }
   ]
