@@ -1,21 +1,9 @@
 /* global document:true */
+import Coins from '../../src/Coins.js';
 import Faucets from '../../src/Faucets.js';
 import Settings from '../../src/Settings.js';
 
 (() => {
-  const humanizeCoin = (coin) => {
-    const dictionary = {
-      BTC: 'Bitcoin',
-      DASH: 'Dash',
-      DOGE: 'Dogecoin',
-      ETH: 'Ethereum',
-      LTC: 'Litecoin',
-      '': '',
-    };
-
-    return dictionary[String(coin)];
-  };
-
   const microwalletToLink = (microwallet) => {
     switch (String(microwallet)) {
       case 'coinpot':
@@ -77,7 +65,7 @@ import Settings from '../../src/Settings.js';
     <a href="${url}">${name}</a>
   </th>
   <td>
-    ${humanizeCoin(coin)}
+    ${Coins.humanize(coin)}
   </td>
   <td class="text-center">
     ${microwalletToLink(microwallet)}
