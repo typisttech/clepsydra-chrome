@@ -6,12 +6,12 @@ import Tabs from '../../src/Tabs.js';
 (() => {
   const openFaucetAlarmName = 'clepsydraOpenFaucet';
 
-  const createAlarm = async () => {
+  const setAlarm = async () => {
     const {
       openIntervalInMinutes,
     } = await Settings.get();
 
-    Alarms.createIfDiff(openFaucetAlarmName, {
+    Alarms.recreate(openFaucetAlarmName, {
       periodInMinutes: Number(openIntervalInMinutes),
     });
   };
@@ -46,7 +46,7 @@ import Tabs from '../../src/Tabs.js';
 
   Alarms.addOnAlarmListener(onAlarm);
 
-  Settings.addOnChangedListener(createAlarm);
+  Settings.addOnChangedListener(setAlarm);
 
-  createAlarm();
+  setAlarm();
 })();
