@@ -1,6 +1,5 @@
 /* global document:true */
 import Settings from '../../src/Settings.js';
-import Storage from '../../src/Storage.js';
 
 (() => {
   const getFormElements = () => ({
@@ -9,27 +8,25 @@ import Storage from '../../src/Storage.js';
   });
 
   const updateForm = async () => {
-    Storage.get(async (storage) => {
-      const {
-        numFacuetsToOpen,
-        openIntervalInMinutes,
-      } = await Settings.fromStoreage(storage);
+    const {
+      numFacuetsToOpen,
+      openIntervalInMinutes,
+    } = await Settings.get();
 
-      const {
-        numFacuetsToOpenInput,
-        openIntervalInMinutesInput,
-      } = getFormElements();
+    const {
+      numFacuetsToOpenInput,
+      openIntervalInMinutesInput,
+    } = getFormElements();
 
-      numFacuetsToOpenInput.value = numFacuetsToOpen;
-      openIntervalInMinutesInput.value = openIntervalInMinutes;
-    });
+    numFacuetsToOpenInput.value = numFacuetsToOpen;
+    openIntervalInMinutesInput.value = openIntervalInMinutes;
   };
 
-  Storage.addonChangedListener(updateForm);
+  Settings.addOnChangedListener(updateForm);
   document.addEventListener('DOMContentLoaded', updateForm);
 
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('timer-settings-form').addEventListener('submit', (event) => {
+  document.addEventListener('DOMContentLoaded', async () => {
+    document.getElementById('timer-settings-form').addEventListener('submit', async (event) => {
       event.preventDefault();
 
       const {
@@ -37,12 +34,12 @@ import Storage from '../../src/Storage.js';
         openIntervalInMinutesInput,
       } = getFormElements();
 
-      Storage.set({
+      await Settings.set({
         numFacuetsToOpen: Number(numFacuetsToOpenInput.value),
         openIntervalInMinutes: Number(openIntervalInMinutesInput.value),
-      }, () => {
-        document.getElementById('form-saved-alert').style.display = 'block';
       });
+
+      document.getElementById('form-saved-alert').style.display = 'block';
     });
   });
 })();

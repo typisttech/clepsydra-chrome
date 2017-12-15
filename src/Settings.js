@@ -1,15 +1,22 @@
-import Faucets from './Faucets.js';
+import BrowserStorage from './browser/BrowserStorage';
 
 export default class Settings {
-  static async fromStoreage(storage) {
-    const defaultSettings = await Object.freeze({
-      blacklist: [],
-      lastOpenHistory: {},
-      numFacuetsToOpen: await Faucets.length(),
-      openIntervalInMinutes: 180,
-    });
+  static defaults = {
+    blacklist: [],
+    lastOpenHistory: {},
+    numFacuetsToOpen: 5,
+    openIntervalInMinutes: 60,
+  };
 
-    const settings = Object.assign({}, defaultSettings, storage);
-    return Object.freeze(settings);
+  static get = async () => BrowserStorage.get()
+    .then(storage => ({
+      ...Settings.defaults,
+      ...storage,
+    }))
+
+  static set = async item => BrowserStorage.set(item)
+
+  static addOnChangedListener = (listener) => {
+    BrowserStorage.addOnChangedListener(listener);
   }
 }

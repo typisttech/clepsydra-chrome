@@ -1,7 +1,6 @@
 /* global document:true */
 import Faucets from '../../src/Faucets.js';
 import Settings from '../../src/Settings.js';
-import Storage from '../../src/Storage.js';
 
 (() => {
   const humanizeCoin = (coin) => {
@@ -40,25 +39,24 @@ import Storage from '../../src/Storage.js';
 
   const addToArray = (array, item) => [...array, item];
 
-  const toggleStatus = ({
+  const toggleStatus = async ({
     path,
   }) => {
     const row = path.find(element => element.tagName === 'TR');
     const faucetId = row.dataset.id;
 
-    Storage.get(async (storage) => {
-      const {
-        blacklist,
-      } = await Settings.fromStoreage(storage);
 
-      const isBlacklisted = blacklist.includes(faucetId);
-      const newBlacklist = (isBlacklisted)
-        ? removeFromArray(blacklist, faucetId)
-        : addToArray(blacklist, faucetId);
+    const {
+      blacklist,
+    } = await Settings.get();
 
-      Storage.set({
-        blacklist: newBlacklist,
-      });
+    const isBlacklisted = blacklist.includes(faucetId);
+    const newBlacklist = (isBlacklisted)
+      ? removeFromArray(blacklist, faucetId)
+      : addToArray(blacklist, faucetId);
+
+    Settings.set({
+      blacklist: newBlacklist,
     });
   };
 
@@ -106,22 +104,20 @@ import Storage from '../../src/Storage.js';
     laststatusToggle.addEventListener('click', event => toggleStatus(event));
   };
 
-  const updateTable = () => {
-    Storage.get(async (storage) => {
-      const {
-        blacklist,
-      } = await Settings.fromStoreage(storage);
+  const updateTable = async () => {
+    const {
+      blacklist,
+    } = await Settings.get();
 
-      const faucets = await Faucets.sortByRating();
+    const faucets = await Faucets.sortByRating();
 
-      // Reset tbody
-      document.getElementById('faucet-list-tbody').innerHTML = '';
+    // Reset tbody
+    document.getElementById('faucet-list-tbody').innerHTML = '';
 
-      faucets.forEach((faucet) => {
-        const isEnabled = !blacklist.includes(faucet.id);
+    faucets.forEach((faucet) => {
+      const isEnabled = !blacklist.includes(faucet.id);
 
-        addRowWithValues(faucet, isEnabled);
-      });
+      addRowWithValues(faucet, isEnabled);
     });
   };
 
@@ -129,7 +125,7 @@ import Storage from '../../src/Storage.js';
     document.getElementById('num-of-faucets').innerHTML = await Faucets.length();
   };
 
-  Storage.addonChangedListener(updateTable);
+  Settings.addOnChangedListener(updateTable);
   document.addEventListener('DOMContentLoaded', updateTable);
   document.addEventListener('DOMContentLoaded', updateNumOfFaucets);
 })();

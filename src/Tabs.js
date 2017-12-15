@@ -1,9 +1,5 @@
-/* global chrome:true */
+import BrowserTabs from './browser/BrowserTabs';
+
 export default class Tabs {
-  static open(url) {
-    chrome.tabs.create({
-      url,
-      active: false,
-    });
-  }
+  static open = async url => BrowserTabs.open(url)
 }
