@@ -1,6 +1,15 @@
 # Change Log
 
-## [0.1.6](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.6) (2017-12-15)
+## [0.1.7](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.7) (2017-12-16)
+[Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.6...0.1.7)
+
+**Merged pull requests:**
+
+- Refactor: Extract classes \`OpenTabs\` and \`Coins\` [\#23](https://github.com/TypistTech/clepsydra-chrome/pull/23) ([TangRufus](https://github.com/TangRufus))
+- Extract chrome adopters [\#22](https://github.com/TypistTech/clepsydra-chrome/pull/22) ([TangRufus](https://github.com/TangRufus))
+- Add `.node-version` [\#21](https://github.com/TypistTech/clepsydra-chrome/pull/21) ([TangRufus](https://github.com/TangRufus))
+
+## [0.1.6](https://github.com/TypistTech/clepsydra-chrome/tree/0.1.6) (2017-12-14)
 [Full Changelog](https://github.com/TypistTech/clepsydra-chrome/compare/0.1.5...0.1.6)
 
 **Closed issues:**
@@ -10,6 +19,7 @@
 
 **Merged pull requests:**
 
+- Version bump 0.1.6 [\#20](https://github.com/TypistTech/clepsydra-chrome/pull/20) ([TangRufus](https://github.com/TangRufus))
 - Use `webpack` directly instead of `laravel-mix` [\#19](https://github.com/TypistTech/clepsydra-chrome/pull/19) ([TangRufus](https://github.com/TangRufus))
 - Update faucet list [\#18](https://github.com/TypistTech/clepsydra-chrome/pull/18) ([TangRufus](https://github.com/TangRufus))
 
