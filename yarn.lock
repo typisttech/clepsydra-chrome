@@ -918,6 +918,10 @@ chokidar@^1.7.0:
   optionalDependencies:
     fsevents "^1.0.0"
 
+chrome-promise@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/chrome-promise/-/chrome-promise-2.1.2.tgz#bf3048e92a97d03085bc36c5fde18cf1178165a6"
+
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
