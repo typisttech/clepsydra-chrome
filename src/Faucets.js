@@ -1,5 +1,4 @@
 /* global fetch:true */
-
 import flattenDeep from 'lodash/flattenDeep';
 import partition from 'lodash/partition';
 import sortBy from 'lodash/sortBy';
